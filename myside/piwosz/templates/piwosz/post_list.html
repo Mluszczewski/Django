@@ -4,6 +4,18 @@
 	</head>
 	<body>
 		<div>
+		    <h1><a href="/">Pisane po wojaku</a></h1>
+		</div>
+
+		{% for post in posts %}
+		    <div>
+			<p>published: {{ post.published_date }}</p>
+			<h1><a href="">{{ post.title }}</a></h1>
+			<p>{{ post.text|linebreaksbr }}</p>
+		    </div>
+		{% endfor %}
+
+		<div>
 			<h1><a href="/">Strona Piwosza</a></h1>
 		<div>
 		
